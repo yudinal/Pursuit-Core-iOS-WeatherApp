@@ -9,7 +9,7 @@ Your app should let the user input a zipcode, then see the 7-day forecast.  Sele
 
 # Gif
 
-![gif](https://github.com/C4Q/AC-iOS-Unit4Week3-HW/blob/master/unit4week3hwV2.gif)
+![gif](https://github.com/joinpursuit/Pursuit-Core-iOS-WeatherApp/blob/master/weather-app.gif)
 
 
 # Detailed Overview
