@@ -79,18 +79,4 @@ The image at the top should be the most recently favorited image.
 
 # Rubric
 
-Criteria | Points
-:---|:---
-App uses AutoLayout correctly for all iPhones in portrait | 8 Points
-Variable Naming and Readability | 4 Points
-App uses MVC Design Patterns | 4 Points
-App loads forecast based on zip code into collection view | 4 Points
-Selecting a forecast segues to a detail view with more information | 4 Points
-Detail view loads a random image from the city | 4 Points
-User can save images to the File Manager | 4 Points
-Favorite images view controller loads all favorited images | 4 Points
-Most recent zip code is persisted with user defaults | 4 Points
-Extra Credit: Allow the user to search by the cityname or zipcode | 2 Point
-Extra Credit: Allow the user to toggle whether the displays should be US or Metric.  Persist this to User Defaults | 2 Point
-
-A total of 40 points, with 4 points extra credit.
+![weatherRubric](./weatherRubric.png)
