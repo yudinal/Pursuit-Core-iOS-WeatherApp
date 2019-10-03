@@ -64,7 +64,7 @@ The image at the top should be the most recently favorited image.
 
 # Programmatic UI
 
-- You must make at least one of your View Controller without a Storyboard or xib file, building the UI and constraints fully programatically.
+- You must make at least one of your View Controller without a Storyboard or xib file, building the UI and constraints fully programmatically.
 
 # Endpoints
 
