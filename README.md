@@ -59,14 +59,12 @@ The image at the top should be the most recently favorited image.
 
 # Persistence
 
-For full credit, the following types of persistence must be implemented:
-
-1. Use User Defaults to store the most recently searched zip code
-2. Use File Manager to store the images to disk
+1. Use UserDefaults to store the most recently searched zip code
+2. Use FileManager to store the images to disk
 
 # Endpoints
 
-1. [Aeris Weather API](https://www.aerisweather.com/support/docs/api/)
+1. [Dark Sky API](https://darksky.net/dev)
 2. [Pixabay API](https://pixabay.com/api/docs/) 
 
 # Rubric
