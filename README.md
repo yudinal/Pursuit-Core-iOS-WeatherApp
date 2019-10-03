@@ -49,7 +49,7 @@ The weather detail view controller should have:
 
 Selecting the "Save" bar button item should save the image to your favorites and present an alert view informing the user.
 
-## Favorite images view controller
+### Favorite images view controller
 
 The favorite images view controller should have:
 
@@ -62,10 +62,20 @@ The image at the top should be the most recently favorited image.
 1. Use UserDefaults to store the most recently searched zip code
 2. Use FileManager to store the images to disk
 
+# Programmatic UI
+
+- You must make at least one of your View Controller without a Storyboard or xib file, building the UI and constraints fully programatically.
+
 # Endpoints
 
 1. [Dark Sky API](https://darksky.net/dev)
 2. [Pixabay API](https://pixabay.com/api/docs/) 
+
+# Bonus Ideas
+
+- Allow the user to search by the cityname or zipcode
+- Allow the user to toggle whether the displays should be US or Metric.  Persist this to UserDefaults
+- Add animations
 
 # Rubric
 
