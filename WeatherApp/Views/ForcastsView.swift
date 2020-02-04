@@ -30,12 +30,22 @@ class ForcastsView: UIView {
          layout.itemSize = CGSize(width: 100, height: 100)
          let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
          cv.backgroundColor = .systemBackground
+    cv.isHidden = true
          return cv
      }()
+    
+    public lazy var defaultImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "weather")
+        return imageView
+        
+    }()
+    
     public lazy var textField: UITextField = {
         let textField = UITextField()
         textField.textAlignment = .left
-        textField.backgroundColor = .gray
+        textField.backgroundColor = .lightGray
+        textField.placeholder = "  Enter Zip  "
         return textField
     }()
     
@@ -63,7 +73,7 @@ class ForcastsView: UIView {
      setupCollectionViewConstraints()
     setupTextFieldConstaints()
     setupMessageLabelConstraints()
-    
+    setupDefaultImageConstraints()
    }
     
     private func setupAreaNameLabelConstraints() {
@@ -87,6 +97,17 @@ class ForcastsView: UIView {
          ])
          
      }
+    private func setupDefaultImageConstraints() {
+        addSubview(defaultImage)
+        defaultImage.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            defaultImage.centerYAnchor.constraint(equalTo: collectionView.centerYAnchor),
+            defaultImage.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor),
+            defaultImage.widthAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 1),
+               defaultImage.heightAnchor.constraint(equalTo: collectionView.heightAnchor, multiplier: 1),
+        ])
+        
+    }
     private func setupTextFieldConstaints() {
         
            addSubview(textField)

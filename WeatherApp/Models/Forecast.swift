@@ -6,7 +6,7 @@
 //  Copyright © 2020 David Rifkin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Forecast: Codable {
     
@@ -33,7 +33,7 @@ struct Information: Codable {
         let precipIntensityMax: Double
         let precipIntensityMaxTime: Double
         let precipProbability: Double
-        let precipType: String
+//        let precipType: String
         let temperatureHigh: Double
         let temperatureHighTime: Double
         let temperatureLow: Double
@@ -75,4 +75,26 @@ extension Double {
             let localDate = dateFormatter.string(from: date)
             return localDate
         }
+    func secondTimeConverter() -> String {
+             let date = Date(timeIntervalSince1970: self)
+             let dateFormatter = DateFormatter()
+             dateFormatter.timeStyle = DateFormatter.Style.medium
+             dateFormatter.dateStyle = DateFormatter.Style.medium
+             dateFormatter.dateFormat = "hh:mm:ss"
+             dateFormatter.timeZone = .current
+             let localDate = dateFormatter.string(from: date)
+             return localDate
+         }
+}
+
+extension UIViewController {
+func showAlert(title: String, message: String, completion: ((UIAlertAction) -> Void)? = nil) {
+    
+    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    
+    
+    let okAction = UIAlertAction(title: "Ok", style: .default, handler: completion)
+    alertController.addAction(okAction)
+    present(alertController, animated: true, completion: nil)
+}
 }
